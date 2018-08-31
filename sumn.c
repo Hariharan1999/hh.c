@@ -1,16 +1,17 @@
 #include<stdio.h>
 int main()
 {
-  int n, i, sum = 0;
+  int n, a[100],i, sum = 0;
   
   printf("Please Enter any Integer Value\n");
   scanf("%d", &n);
+  printf("Enter the %d elements",n);
   
-  for(i=1; i<=n; i++)
+  for(i=0; i<n; i++)
   {
-     sum = sum + i;
+     scanf("%d",&a[i]);
+     sum=sum+a[i];
   }
-  
-  printf("Sum of Natural Numbers = %d", sum);
+  printf("%d", sum);
   return 0;
 }
